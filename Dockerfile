@@ -4,7 +4,7 @@ COPY requirements.txt /app
 COPY todo_site /app/todo_site
 
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip && \
+    apt install -y python3 python3-pip && \
     pip install -r requirements.txt
 
 WORKDIR /app/todo_site
